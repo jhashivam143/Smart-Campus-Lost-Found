@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - CampusFind</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Campus<span>Find</span>
+    </div>
+
+    <nav>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="search.html">Search</a>
+
+        <a href="post_item.html">Post Item</a>
+
+        <a href="profile.html">Profile</a>
+
+        <button onclick="logout()" class="logout-btn">
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+<main class="dashboard">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <p class="small-title">
+                STUDENT DASHBOARD
+            </p>
+
+            <h1>
+                Welcome back 👋
+            </h1>
+
+            <p>
+                Manage your lost and found reports.
+            </p>
+
+        </div>
+
+        <a href="post_item.html" class="btn primary">
+            + Post Item
+        </a>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <span>🔴</span>
+            <h2 id="lostCount">0</h2>
+            <p>Lost Items</p>
+        </div>
+
+        <div class="stat-card">
+            <span>🟢</span>
+            <h2 id="foundCount">0</h2>
+            <p>Found Items</p>
+        </div>
+
+        <div class="stat-card">
+            <span>🔎</span>
+            <h2 id="matchCount">0</h2>
+            <p>Possible Matches</p>
+        </div>
+
+        <div class="stat-card">
+            <span>✅</span>
+            <h2 id="returnedCount">0</h2>
+            <p>Returned</p>
+        </div>
+
+    </div>
+
+    <section class="dashboard-section">
+
+        <div class="section-heading">
+
+            <h2>Recent Reports</h2>
+
+            <a href="search.html">
+                View All →
+            </a>
+
+        </div>
+
+        <div id="itemContainer" class="item-grid"></div>
+
+    </section>
+
+</main>
+
+<script src="JS/app.js"></script>
+<script src="JS/items.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | CampusFind</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/profile.css">
+</head>
+<body class="profile-page">
+
+    <nav class="profile-navbar">
+        <a href="index.html" class="profile-brand">
+            Campus<span>Find</span>
+        </a>
+
+        <div class="profile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html" class="active">Profile</a>
+        </div>
+    </nav>
+
+    <main class="profile-container">
+
+        <section class="profile-heading">
+            <div>
+                <span class="profile-badge">🎓 CampusFind Account</span>
+                <h1>My Profile</h1>
+                <p>Manage your account and track your lost and found items.</p>
+            </div>
+        </section>
+
+        <section class="profile-layout">
+
+            <aside class="profile-card profile-summary">
+                <div class="avatar" id="avatar">S</div>
+                <h2 id="displayName">Student Name</h2>
+                <p id="displayEmail">student@example.com</p>
+                <span class="student-badge">🎓 Student Account</span>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-detail">
+                    <span>Member since</span>
+                    <strong id="memberSince">CampusFind member</strong>
+                </div>
+
+                <div class="summary-detail">
+                    <span>Account status</span>
+                    <strong class="verified-status">● Active</strong>
+                </div>
+            </aside>
+
+            <div class="profile-main">
+
+                <section class="profile-card">
+                    <div class="section-heading">
+                        <div>
+                            <h2>Personal Information</h2>
+                            <p>Keep your student details up to date.</p>
+                        </div>
+                        <span class="section-icon">👤</span>
+                    </div>
+
+                    <form id="profileForm">
+                        <div class="profile-form-grid">
+                            <div class="profile-field">
+                                <label for="fullName">Full Name</label>
+                                <input id="fullName" name="fullName"
+                                       type="text" placeholder="Enter your name"
+                                       required maxlength="100">
+                            </div>
+
+                            <div class="profile-field">
+                                <label for="email">Email Address</label>
+                                <input id="email" name="email"
+                                       type="email" placeholder="you@example.com"
+                                       required maxlength="150">
+                            </div>
+
+                            <div class="profile-field">
+                                <label for="studentId">Student ID</label>
+                                <input id="studentId" name="studentId"
+                                       type="text" placeholder="Enter student ID"
+                                       maxlength="50">
+                            </div>
+
+                            <div class="profile-field">
+                                <label for="department">Department</label>
+                                <select id="department" name="department">
+                                    <option value="">Select department</option>
+                                    <option value="CSE">Computer Science (CSE)</option>
+                                    <option value="IT">Information Technology</option>
+                                    <option value="ECE">Electronics (ECE)</option>
+                                    <option value="ME">Mechanical Engineering</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="profile-field full-width">
+                                <label for="phone">Phone Number (optional)</label>
+                                <input id="phone" name="phone"
+                                       type="tel" placeholder="Enter phone number"
+                                       maxlength="20">
+                            </div>
+                        </div>
+
+                        <p id="profileMessage" class="profile-message"
+                           role="status" aria-live="polite"></p>
+
+                        <div class="profile-actions">
+                            <button type="reset" class="btn-secondary">
+                                Cancel
+                            </button>
+                            <button type="submit" class="btn-primary">
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="profile-card">
+                    <div class="section-heading">
+                        <div>
+                            <h2>My Activity</h2>
+                            <p>Your Lost & Found activity at a glance.</p>
+                        </div>
+                        <span class="section-icon">📦</span>
+                    </div>
+
+                    <div class="activity-grid">
+                        <a href="dashboard.html" class="activity-item">
+                            <span class="activity-icon purple">📢</span>
+                            <strong id="lostCount">—</strong>
+                            <span>Lost Reports</span>
+                        </a>
+
+                        <a href="dashboard.html" class="activity-item">
+                            <span class="activity-icon green">🔎</span>
+                            <strong id="foundCount">—</strong>
+                            <span>Found Reports</span>
+                        </a>
+
+                        <a href="matches.html" class="activity-item">
+                            <span class="activity-icon orange">✨</span>
+                            <strong id="matchCount">—</strong>
+                            <span>Possible Matches</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="profile-card profile-help">
+                    <div>
+                        <h3>Need to report an item?</h3>
+                        <p>Help reunite lost belongings with their owners.</p>
+                    </div>
+                    <a href="post_item.html" class="btn-primary">
+                        Report an Item →
+                    </a>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="profile-footer">
+        CampusFind · Helping students find what matters.
+    </footer>
+
+    <script src="JS/profile.js"></script>
+</body>
+</html>

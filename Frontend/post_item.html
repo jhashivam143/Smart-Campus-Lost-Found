@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Post Item - CampusFind</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Campus<span>Find</span>
+    </div>
+
+    <nav>
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="search.html">Search</a>
+
+    </nav>
+
+</header>
+
+<main class="form-page">
+
+    <div class="form-header">
+
+        <p class="small-title">
+            LOST & FOUND
+        </p>
+
+        <h1>Report an Item</h1>
+
+        <p>
+            Provide accurate information to help us find a match.
+        </p>
+
+    </div>
+
+    <div class="item-form-card">
+
+        <form id="itemForm">
+
+            <div class="type-selector">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="type"
+                        value="LOST"
+                        checked
+                    >
+
+                    <span>
+                        🔴 I Lost Something
+                    </span>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="type"
+                        value="FOUND"
+                    >
+
+                    <span>
+                        🟢 I Found Something
+                    </span>
+                </label>
+
+            </div>
+
+            <div class="form-grid">
+            <select id="category" required>
+
+   
+                <div class="form-group">
+
+                    <label>Item Title</label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="e.g. Black Wireless Earbuds"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Category</label>
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option>Electronics</option>
+                        <option>Books</option>
+                        <option>Bag</option>
+                        <option>Clothing</option>
+                        <option>Documents</option>
+                        <option>Keys</option>
+                        <option>Accessories</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Location</label>
+
+                    <select id="location" required>
+
+                        <option value="">
+                            Select Location
+                        </option>
+
+                        <option>Block A</option>
+                        <option>Block B</option>
+                        <option>Block C</option>
+                        <option>Library</option>
+                        <option>Cafeteria</option>
+                        <option>Sports Ground</option>
+                        <option>Parking</option>
+                        <option>Hostel</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Date</label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Description</label>
+
+                <textarea
+                    id="description"
+                    rows="5"
+                    placeholder="Describe the item, colour, brand, identifying marks, etc."
+                    required
+                ></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Keywords</label>
+
+                <input
+                    type="text"
+                    id="keywords"
+                    placeholder="black, boat, wireless, earbuds"
+                >
+
+                <small>
+                    Add keywords that could help our matching system.
+                </small>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Item Image</label>
+
+                <div class="upload-box">
+
+                    <span>📷</span>
+
+                    <p>
+                        Click to upload an image
+                    </p>
+
+                    <small>
+                        JPG or PNG
+                    </small>
+
+                    <input
+                        type="file"
+                        id="image"
+                        accept="image/*"
+                    >
+
+                </div>
+
+            </div>
+
+            <button
+                type="submit"
+                class="btn primary full"
+            >
+                Submit Report
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="JS/items.js"></script>
+
+</body>
+</html>

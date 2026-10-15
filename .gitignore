@@ -1,0 +1,6 @@
+.DS_Store
+*.save
+.env
+*.log
+target/
+.idea/
