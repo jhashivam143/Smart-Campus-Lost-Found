@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - CampusFind</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Campus<span>Find</span>
+    </div>
+
+    <nav>
+
+        <a href="admin.html">Admin Dashboard</a>
+
+        <a href="index.html">Logout</a>
+
+    </nav>
+
+</header>
+
+<main class="dashboard">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <p class="small-title">
+                ADMIN PANEL
+            </p>
+
+            <h1>Campus Overview</h1>
+
+            <p>
+                Manage reports, users and platform activity.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="stat-card">
+
+            <span>👥</span>
+
+            <h2>245</h2>
+
+            <p>Total Users</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <span>📋</span>
+
+            <h2>128</h2>
+
+            <p>Total Reports</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <span>🔴</span>
+
+            <h2>73</h2>
+
+            <p>Lost Items</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <span>🟢</span>
+
+            <h2>55</h2>
+
+            <p>Found Items</p>
+
+        </div>
+
+    </div>
+
+    <section class="dashboard-section">
+
+        <div class="section-heading">
+
+            <h2>Recent Reports</h2>
+
+        </div>
+
+        <div class="admin-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Location</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>#001</td>
+
+                        <td>Black Earbuds</td>
+
+                        <td>Electronics</td>
+
+                        <td>Block B</td>
+
+                        <td>
+                            <span class="status lost">
+                                LOST
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="status open">
+                                OPEN
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="delete-btn">
+                                Remove
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#002</td>
+
+                        <td>Blue Backpack</td>
+
+                        <td>Bag</td>
+
+                        <td>Library</td>
+
+                        <td>
+                            <span class="status found">
+                                FOUND
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="status open">
+                                OPEN
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="delete-btn">
+                                Remove
+                            </button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

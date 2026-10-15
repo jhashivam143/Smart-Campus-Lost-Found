@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Search Items - CampusFind</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Campus<span>Find</span>
+    </div>
+
+    <nav>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="post_item.html">Post Item</a>
+
+        <a href="login.html">Login</a>
+
+    </nav>
+
+</header>
+
+<main class="search-page">
+
+    <div class="search-header">
+
+        <p class="small-title">
+            CAMPUS DATABASE
+        </p>
+
+        <h1>Find an Item 🔎</h1>
+
+        <p>
+            Search lost and found reports from your campus.
+        </p>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search item, brand, colour..."
+        >
+
+        <select id="searchCategory">
+
+            <option value="">All Categories</option>
+
+            <option>Electronics</option>
+            <option>Books</option>
+            <option>Bag</option>
+            <option>Clothing</option>
+            <option>Documents</option>
+            <option>Keys</option>
+            <option>Accessories</option>
+
+        </select>
+
+        <select id="searchType">
+
+            <option value="">Lost + Found</option>
+
+            <option value="LOST">Lost</option>
+            <option value="FOUND">Found</option>
+
+        </select>
+
+        <button
+            onclick="searchItems()"
+            class="btn primary"
+        >
+            Search
+        </button>
+
+    </div>
+
+    <div
+        id="searchResults"
+        class="item-grid"
+    ></div>
+
+</main>
+
+<script src="JS/items.js"></script>
+
+</body>
+</html>
